@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "InitialLoginViewController.isValidEmail(emailBox:):InitialLoginViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "passwordBox.text!">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "InitialLoginViewController.textField(_:shouldChangeCharactersIn:replacementString:):InitialLoginViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "isValidPw(passwordBox: passwordBox.text!)">
+            </PersistentString>
+            <PersistentString
+               value = "isValidEmail(emailBox: emailBox.text!)">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

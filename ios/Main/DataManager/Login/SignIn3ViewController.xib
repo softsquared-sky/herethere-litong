@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SignIn3ViewController" customModule="ios" customModuleProvider="target">
+            <connections>
+                <outlet property="birthDate" destination="zkk-gC-tiJ" id="hyr-vm-1fq"/>
+                <outlet property="myLabel" destination="UQZ-tM-qWU" id="jIB-JY-wcx"/>
+                <outlet property="realName" destination="c93-zK-xYY" id="vyv-n0-faE"/>
+                <outlet property="userNickname" destination="C6O-WH-7zW" id="tS2-Cv-bMK"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="5Hy-WA-EEl">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vUv-dL-zS1">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <color key="backgroundColor" red="0.27410668129999999" green="0.61318606139999998" blue="0.87454193830000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="기본정보입력" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ROL-S3-xzZ">
+                    <rect key="frame" x="24" y="128" width="81" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="81" id="F0P-3b-q91"/>
+                        <constraint firstAttribute="height" constant="22" id="HTt-eZ-hDf"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="학교인증" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZbD-cc-LPe">
+                    <rect key="frame" x="117" y="128" width="52" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="22" id="CBj-mH-316"/>
+                        <constraint firstAttribute="width" constant="52" id="Nyt-JO-ZCg"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="관심지역선택" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q07-lP-AWV">
+                    <rect key="frame" x="181" y="128" width="74" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="74" id="6D9-OW-5yn"/>
+                        <constraint firstAttribute="height" constant="22" id="YsF-yH-5ro"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UQZ-tM-qWU">
+                    <rect key="frame" x="24" y="210" width="186" height="77"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="186" id="FzB-vp-NeY"/>
+                        <constraint firstAttribute="height" constant="77" id="Ybh-pb-cuL"/>
+                    </constraints>
+                    <string key="text">개인정보를 
+입력해주세요.</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="fill" text="실명을 입력해주세요." textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" disabledBackground="darkbg" translatesAutoresizingMaskIntoConstraints="NO" id="c93-zK-xYY">
+                    <rect key="frame" x="30" y="404" width="240" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="240" id="OYw-wW-slO"/>
+                        <constraint firstAttribute="height" constant="40" id="Rwp-l8-ihc"/>
+                    </constraints>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="fill" text="생년월일을 입력해주세요.(ex. 950926)" textAlignment="natural" minimumFontSize="17" disabledBackground="darkbg" translatesAutoresizingMaskIntoConstraints="NO" id="zkk-gC-tiJ">
+                    <rect key="frame" x="30" y="455" width="240" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="CcC-YO-PVg"/>
+                        <constraint firstAttribute="width" constant="240" id="pd0-dW-RZU"/>
+                    </constraints>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3VR-0C-m1J">
+                    <rect key="frame" x="30" y="576" width="140" height="48"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="4pi-Jq-8rI"/>
+                        <constraint firstAttribute="width" constant="140" id="Mtb-ly-kM5"/>
+                    </constraints>
+                    <state key="normal" image="icLogin"/>
+                    <connections>
+                        <action selector="completedBtnn:" destination="-1" eventType="touchUpInside" id="FLn-Ao-vWw"/>
+                    </connections>
+                </button>
+                <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="Hl5-pV-zNN">
+                    <rect key="frame" x="187.5" y="782" width="39" height="37"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="37" id="6Dq-hb-xw1"/>
+                        <constraint firstAttribute="width" constant="39" id="ZVF-6P-m5A"/>
+                    </constraints>
+                </pageControl>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gti-iM-jjm">
+                    <rect key="frame" x="24" y="72" width="24" height="24"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="24" id="EIb-Cs-khN"/>
+                        <constraint firstAttribute="width" constant="24" id="ofy-o9-3Jx"/>
+                    </constraints>
+                    <state key="normal" image="dismiss"/>
+                </button>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="fill" text="사용할 닉네임을 입력해주세요." textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" disabledBackground="darkbg" translatesAutoresizingMaskIntoConstraints="NO" id="C6O-WH-7zW">
+                    <rect key="frame" x="30" y="505.5" width="240" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="Rqq-dk-acm"/>
+                        <constraint firstAttribute="width" constant="240" id="v9d-4Z-ATq"/>
+                    </constraints>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mpj-FJ-SgE">
+                    <rect key="frame" x="30" y="426" width="240" height="1"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="GRR-YV-3El"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K6A-Ye-Oue">
+                    <rect key="frame" x="30" y="477" width="240" height="1"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="aDf-F4-tZs"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ba0-qw-qVK">
+                    <rect key="frame" x="30" y="527.5" width="240" height="1"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="Ydg-sK-u4P"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="ROL-S3-xzZ" firstAttribute="top" secondItem="XgF-4Y-ey4" secondAttribute="top" constant="84" id="1gI-qz-0AD"/>
+                <constraint firstItem="3VR-0C-m1J" firstAttribute="top" secondItem="XgF-4Y-ey4" secondAttribute="top" constant="532" id="2wz-VU-huO"/>
+                <constraint firstItem="c93-zK-xYY" firstAttribute="leading" secondItem="XgF-4Y-ey4" secondAttribute="leading" constant="30" id="5Sk-9J-gl2"/>
+                <constraint firstItem="zkk-gC-tiJ" firstAttribute="leading" secondItem="K6A-Ye-Oue" secondAttribute="leading" id="7b5-Ik-7T0"/>
+                <constraint firstItem="q07-lP-AWV" firstAttribute="leading" secondItem="ZbD-cc-LPe" secondAttribute="trailing" constant="12" id="DYd-3o-Z1H"/>
+                <constraint firstItem="c93-zK-xYY" firstAttribute="leading" secondItem="Mpj-FJ-SgE" secondAttribute="leading" id="E5e-32-emX"/>
+                <constraint firstItem="ROL-S3-xzZ" firstAttribute="leading" secondItem="XgF-4Y-ey4" secondAttribute="leading" constant="24" id="EYa-Sd-Sqs"/>
+                <constraint firstItem="K6A-Ye-Oue" firstAttribute="top" secondItem="zkk-gC-tiJ" secondAttribute="bottom" constant="-18" id="HXy-jr-VjC"/>
+                <constraint firstItem="zkk-gC-tiJ" firstAttribute="leading" secondItem="XgF-4Y-ey4" secondAttribute="leading" constant="30" id="I4x-et-9H2"/>
+                <constraint firstItem="c93-zK-xYY" firstAttribute="top" secondItem="5Hy-WA-EEl" secondAttribute="topMargin" constant="360" id="IVJ-tJ-Bmz"/>
+                <constraint firstAttribute="bottom" secondItem="vUv-dL-zS1" secondAttribute="bottom" id="Mfd-qp-dKZ"/>
+                <constraint firstAttribute="trailing" secondItem="vUv-dL-zS1" secondAttribute="trailing" id="R3x-rU-W9j"/>
+                <constraint firstItem="vUv-dL-zS1" firstAttribute="centerX" secondItem="Hl5-pV-zNN" secondAttribute="centerX" id="Yre-Jt-xYd"/>
+                <constraint firstItem="zkk-gC-tiJ" firstAttribute="top" secondItem="c93-zK-xYY" secondAttribute="bottom" constant="10.800000000000001" id="ZVC-sY-oOB"/>
+                <constraint firstItem="C6O-WH-7zW" firstAttribute="top" secondItem="zkk-gC-tiJ" secondAttribute="bottom" constant="10.800000000000001" id="aoM-xD-Wcd"/>
+                <constraint firstItem="C6O-WH-7zW" firstAttribute="leading" secondItem="XgF-4Y-ey4" secondAttribute="leading" constant="30" id="brT-zh-rkm"/>
+                <constraint firstItem="Mpj-FJ-SgE" firstAttribute="top" secondItem="c93-zK-xYY" secondAttribute="bottom" constant="-18" id="cpw-gu-Ilb"/>
+                <constraint firstItem="3VR-0C-m1J" firstAttribute="leading" secondItem="XgF-4Y-ey4" secondAttribute="leading" constant="30" id="deu-nS-Bxu"/>
+                <constraint firstItem="ba0-qw-qVK" firstAttribute="top" secondItem="C6O-WH-7zW" secondAttribute="bottom" constant="-18" id="g1D-dC-nvL"/>
+                <constraint firstItem="gti-iM-jjm" firstAttribute="leading" secondItem="XgF-4Y-ey4" secondAttribute="leading" constant="24" id="gXE-lm-NrG"/>
+                <constraint firstItem="ZbD-cc-LPe" firstAttribute="leading" secondItem="ROL-S3-xzZ" secondAttribute="trailing" constant="12" id="ht8-wl-eAP"/>
+                <constraint firstItem="q07-lP-AWV" firstAttribute="top" secondItem="5Hy-WA-EEl" secondAttribute="topMargin" constant="84" id="kqW-7t-gXS"/>
+                <constraint firstItem="XgF-4Y-ey4" firstAttribute="leading" secondItem="vUv-dL-zS1" secondAttribute="leading" id="mVr-y9-dqu"/>
+                <constraint firstItem="UQZ-tM-qWU" firstAttribute="leading" secondItem="XgF-4Y-ey4" secondAttribute="leading" constant="24" id="oDR-uB-mIb"/>
+                <constraint firstItem="C6O-WH-7zW" firstAttribute="leading" secondItem="ba0-qw-qVK" secondAttribute="leading" id="oi0-sl-pjR"/>
+                <constraint firstItem="XgF-4Y-ey4" firstAttribute="bottom" secondItem="Hl5-pV-zNN" secondAttribute="bottom" constant="43" id="pAa-0D-5F7"/>
+                <constraint firstItem="C6O-WH-7zW" firstAttribute="trailing" secondItem="ba0-qw-qVK" secondAttribute="trailing" id="q2U-gh-gGf"/>
+                <constraint firstItem="vUv-dL-zS1" firstAttribute="top" secondItem="5Hy-WA-EEl" secondAttribute="top" id="srA-JQ-1at"/>
+                <constraint firstItem="c93-zK-xYY" firstAttribute="trailing" secondItem="Mpj-FJ-SgE" secondAttribute="trailing" id="uFJ-fb-vlh"/>
+                <constraint firstItem="UQZ-tM-qWU" firstAttribute="top" secondItem="5Hy-WA-EEl" secondAttribute="topMargin" constant="166" id="umV-B3-k88"/>
+                <constraint firstItem="zkk-gC-tiJ" firstAttribute="trailing" secondItem="K6A-Ye-Oue" secondAttribute="trailing" id="uqY-pq-4SI"/>
+                <constraint firstItem="gti-iM-jjm" firstAttribute="top" secondItem="XgF-4Y-ey4" secondAttribute="top" constant="28" id="xhO-y8-u6d"/>
+                <constraint firstItem="ZbD-cc-LPe" firstAttribute="top" secondItem="XgF-4Y-ey4" secondAttribute="top" constant="84" id="ycI-a2-0jR"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="XgF-4Y-ey4"/>
+            <point key="canvasLocation" x="47.826086956521742" y="35.491071428571423"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="darkbg" width="320" height="56"/>
+        <image name="dismiss" width="24" height="24"/>
+        <image name="icLogin" width="140" height="48"/>
+    </resources>
+</document>
